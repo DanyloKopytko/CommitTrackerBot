@@ -38,8 +38,6 @@ app.use(
 
     const branch = ref.split('/')[2]
 
-    if (!['staging', 'production'].includes(branch)) return res.send('No actions for this branch')
-
     const commitWord = total_commits_count === 1 ? 'commit' : 'commits'
 
     await bot.sendMessage(
