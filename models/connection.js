@@ -4,7 +4,7 @@ class Connection extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
       {
-        chatId: Sequelize.INTEGER,
+        chatId: Sequelize.BIGINT,
         token: Sequelize.UUID,
       },
       { sequelize, tableName: 'connections' }

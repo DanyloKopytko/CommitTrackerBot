@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
       },
       chatId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
         allowNull: false,
         unique: true,
       },
