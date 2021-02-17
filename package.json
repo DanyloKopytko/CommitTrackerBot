@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node App.js",
     "dev": "nodemon App.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate": "npx sequelize db:migrate"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,10 @@
     "cors": "^2.8.5",
     "dotenv-flow": "^3.2.0",
     "express": "^4.17.1",
-    "node-telegram-bot-api": "^0.51.0"
+    "node-telegram-bot-api": "^0.51.0",
+    "pg": "8.2.1",
+    "sequelize": "5.21.10",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
@@ -29,6 +32,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "lint-staged": "^10.5.3",
     "nodemon": "^2.0.7",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "sequelize-cli": "^5.5.1"
   }
 }
